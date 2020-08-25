@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-
 this is the content
 
 <?php get_sidebar();?> 
