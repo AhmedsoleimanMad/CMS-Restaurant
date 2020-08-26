@@ -1,3 +1,5 @@
+<?php /*Template Name: front-page*/ ?>
+
 <?php get_header(); ?>
 <section class="principal">
     <div class="image_principale">
@@ -39,16 +41,16 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-sm-12">
-                    <div class="our_story_picture"></div>
-                    <div class="our_story_text">
-                        <h3>Discover</h3>
-                        <h3>OUR STORY</h3>
-                        <p>ULTIMATE DINING EXPERIENCE LIKE NO OTHER</p>
-                        <p>One of the notable character traits of a successful small restaurant owner is the ability to easily solve problems. Problem-solving is a skill and most of the time comes with being open-minded.</p>
-                        <p>Successful entrepreneurs are open-minded people and as such good optimists, critical thinkers and problem solvers. As a small restaurant owner, you need to be able to</p>
-                        <p>OUR FOUNDER</p>
-                        <p>The Chef</p>
-                    </div>
+                <div class="our_story_picture"></div>
+                <div class="our_story_text">
+                    <h3>Discover</h3>
+                    <h3>OUR STORY</h3>
+                    <p>ULTIMATE DINING EXPERIENCE LIKE NO OTHER</p>
+                    <p>One of the notable character traits of a successful small restaurant owner is the ability to easily solve problems. Problem-solving is a skill and most of the time comes with being open-minded.</p>
+                    <p>Successful entrepreneurs are open-minded people and as such good optimists, critical thinkers and problem solvers. As a small restaurant owner, you need to be able to</p>
+                    <p>OUR FOUNDER</p>
+                    <p>The Chef</p>
+                </div>
             </div>
         </div>
     </div>
