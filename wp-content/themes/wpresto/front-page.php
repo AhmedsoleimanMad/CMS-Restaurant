@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    <div class="hachures_blanches"></div>
+    <div class="hachures_blanches2"></div>
     <div class="row square justify-content-center">
         <div class="col-3 banner_square services">
             <ul>
@@ -55,5 +55,33 @@
         </div>
     </div>
 </section>
+
+<?php if(have_posts()): ?>
+    <?php while(have_posts()): the_post(); ?>
+    <section id="restaurants">
+        <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-12 col-sm-12 pt-5 pb-5">
+                <?php $thumb_id = get_post_thumbnail_id(); $thumb_url = wp_get_attachment_image_src($thumb_id,'thumbnail-size', true); ?>
+                    <div class="thumbnail" style="background-image: url('<?php echo $thumb_url[0]; ?>');"></div>
+                    <div class="post_text">
+                        <h3><?php the_title(); ?></h3>
+                        <h3><?php the_subtitle(); ?></h3>
+                        <p>ULTIMATE DINING EXPERIENCE LIKE NO OTHER</p>
+                        <p>One of the notable character traits of a successful small restaurant owner is the ability to easily solve problems. Problem-solving is a skill and most of the time comes with being open-minded.</p>
+                        <p>Successful entrepreneurs are open-minded people and as such good optimists, critical thinkers and problem solvers. As a small restaurant owner, you need to be able to</p>
+                        <p>OUR FOUNDER</p>
+                        <p>The Chef</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <?php endwhile ?>
+<?php else: ?>
+<h1>Pas d'articles</h1>
+<?php endif ?>
+
 <?php get_footer();?>
 
