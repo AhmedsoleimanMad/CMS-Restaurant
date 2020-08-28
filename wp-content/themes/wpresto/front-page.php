@@ -1,6 +1,9 @@
 <?php /*Template Name: front-page*/ ?>
 
 <?php get_header(); ?>
+<div class="nav_bar_background">
+        <?php wp_nav_menu(); ?>
+</div>
 <section class="principal">
     <div class="image_principale">
         <div class="row">

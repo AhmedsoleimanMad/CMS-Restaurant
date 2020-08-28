@@ -21,6 +21,9 @@ $title_menu = get_field("title-menu");
 ?>
 
 <?php get_header(); ?>
+<div class="nav_bar_background">
+        <?php wp_nav_menu(); ?>
+</div>
 <div class="show_case_menu" style="background-image: url(<?php echo $image["url"] ?>)">
 
     <div class="heading">
