@@ -9,44 +9,54 @@
             </div>
             <div class="open_hours">
                 <h3>Opining hours</h3>
-                <ul>
-                    <li>Jeudi 12-13</li>
-                    <li>Mardi 12-13</li>
-                    <li>Jeuid 12-15</li>
-                    <li>Mercredie 13-15</li>
+                <ul class="list_opening_hours">
+                    <?php
+
+                    if (have_rows('open-hours', "options")) :
+
+                        while (have_rows('open-hours', "options")) : the_row();
+
+                            $day = get_sub_field('day', "options");
+                            $hour = get_sub_field('hour', "options"); ?>
+
+                            <li class="single_day">
+                                <span class="icon_footer"></span>
+                                <?php echo $day . "---" . $hour;
+
+                                ?>
+                            </li>
+
+
+                    <?php
+
+                        endwhile;
+
+                    // No value.
+                    else :
+                    // Do something...
+                    endif; ?>
                 </ul>
 
 
             </div>
             <div class="info_footer">
                 <h3>Contact us</h3>
-                <ul>
-                    <li>0466417666</li>
-                    <li>Rue saint adalbert 9/12w</li>
-                    <li>ahmed.soleiman.mad</li>
+                <ul class="contact_list">
+                    <li><?php echo get_field("tele", "options"); ?></li>
+                    <li><?php echo get_field("adresse", "options"); ?></li>
+                    <li><?php echo get_field("email", "options"); ?></li>
                 </ul>
             </div>
-            <div class="instagram_galery">
 
-                <ul>
-                    <li>Test1</li>
-                    <li>Test2</li>
-                    <li>Test3</li>
-                </ul>
-
-            </div>
         </div>
 
 
         <hr>
 
-        <p>2019 All Rights Reserverd Designed by </p>
+        <p class="footer_copyright">2019 All Rights Reserverd Designed by </p>
     </div>
 
 </div>
-
-
-
 
 
 <?php wp_footer(); ?>
