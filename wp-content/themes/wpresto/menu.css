@@ -125,11 +125,36 @@ hr {
 
 .footer .wrap_footer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: flex-end;
   padding-top: 30px;
+  grid-gap: 30px;
 }
 
 .footer h3 {
   color: #fff;
+}
+
+.single_day {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  font-size: 12px;
+}
+
+.icon_footer {
+  background-image: url("images/svg/time-clock.svg");
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 4px;
+  left: -30px;
+}
+
+.contact_list li {
+  margin-bottom: 10px;
 }

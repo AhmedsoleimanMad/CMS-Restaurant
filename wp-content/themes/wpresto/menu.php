@@ -43,10 +43,7 @@ $title_menu = get_field("title-menu");
                     <div class="sm_heading">
                         <h3><?php echo $subtitle_menu;  ?></h3>
                         <h2><?php echo $title_menu;  ?></h2>
-
                     </div>
-
-
 
                     <!--<pre> <?php echo print_r($menu) ?></pre>-->
 
@@ -72,7 +69,6 @@ $title_menu = get_field("title-menu");
 
                 <?php endwhile;
                                             }
-
                                         endwhile;
                                     }  ?>
             </div>
