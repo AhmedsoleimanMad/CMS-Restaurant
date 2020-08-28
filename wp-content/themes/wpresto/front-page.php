@@ -110,7 +110,7 @@
                 <h3 class="mb-3">LET'S DISCOVER FOOD</h3>
                 <h3 class="mb-5">DISCOVER OUR MENU</h3>
                 <p class="mb-5">For those with pure food indulgence in mind, come next door and state your desires with our ever changing internationally and seasonally inspired small plates. We love food, lots of different food, just like you.</p>
-                <a href="#" class="myButton services mt-5 mb-5">View the full menu</a>
+                <a href="http://localhost/wordpress/menu/" class="myButton services mt-5 mb-5">View the full menu</a>
             </div>
         </div>
     </div>
